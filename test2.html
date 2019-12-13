@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" charset="utf-8">  
+<title>介護ハッカソン試作品</title>
+<fieldset style="background:#ffdbb7; padding:10px; border:none;">
+    <style>
+    body{
+        background-image:url(yama_fukei.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    input.t{
+        height:30px;
+    }
+    div.blocka{
+        display: inline-blorck;
+        background-color:#ffdbb7;
+        height:190px;
+        width:40%;
+    }
+    
+    </style>
+    <center><font size="7">
+    <script type="text/javascript">
+    var now = new Date();
+    var year = now.getYear(); // 年
+    var month = now.getMonth() + 1; // 月
+    var day = now.getDate(); // 日
+    if(year < 2000) { year += 1900; }
+
+    // 数値が1桁の場合、頭に0を付けて2桁で表示する指定
+    if(month < 10) { month = "0" + month; }
+    if(day < 10) { day = "0" + day; }
+    document.write(year + '年　' + month+ '月　' + day + '日');
+    </script>
+    </font>
+    </center>
+</fieldset> 
+<body>
+<font size="5"> 
+<div class="blocka" style="padding: 40px; margin-bottom: 40px; border: 5px double #00FFFF; border-radius: 10px;">
+<center>朝　料理名</center><br>
+<li>食事量　<input type="text" class="t">g<br></li>
+<li>カロリー<input type="text" class="t">g<br></li>
+<li>食事時間<input type="text" class="t"> 〜 <input type="text" class="t"><br></li>
+</div>
+<div class =box2>
+<div class="blocka" style="padding: 40px; margin-bottom: 40px; border: 5px double #00FFFF; border-radius: 10px;">
+<br><li>食事量のグラム数　<input type="text" class="t">g<br></li>
+<br><li>摂取カロリーは<input type="text" class="t">kcal<br><br><br></li>
+</div>
+</div>
+<div class="blocka" style="padding: 40px; margin-bottom: 40px; border: 5px double #FF9900; border-radius: 10px;">
+        <center>昼　料理名</center><br>
+        <li>食事量　<input type="text" class="t">g<br></li>
+        <li>カロリー<input type="text" class="t">g<br></li>
+        <li>食事時間<input type="text" class="t"> 〜 <input type="text" class="t"><br></li>
+        </div>
+        <div class =box2>
+        <div class="blocka" style="padding: 40px; margin-bottom: 40px; border: 5px double #FF9900; border-radius: 10px;">
+        <br><li>食事量のグラム数　<input type="text" class="t">g<br></li>
+        <br><li>摂取カロリーは<input type="text" class="t">kcal<br><br><br></li>
+        </div>
+        </div>
+        <div class="blocka" style="padding: 40px; margin-bottom: 40px; border: 5px double #9999CC; border-radius: 10px;">
+                <center>夜　料理名</center><br>
+                <li>食事量　<input type="text" class="t">g<br></li>
+                <li>カロリー<input type="text" class="t">g<br></li>
+                <li>食事時間<input type="text" class="t"> 〜 <input type="text" class="t"><br></li>
+                </div>
+                <div class =box2>
+                <div class="blocka" style="padding: 40px; margin-bottom: 40px; border: 5px double #9999CC; border-radius: 10px;">
+                <br><li>食事量のグラム数　<input type="text" class="t">g<br></li>
+                <br><li>摂取カロリーは<input type="text" class="t">kcal<br><br><br></li>
+                </div>
+                </div>
+</head>
+<body>
+</font>
+</body>
+</html>
